@@ -1,0 +1,22 @@
+.myText {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 600;
+  color: #e80368;
+  font-size: 55px;
+  animation: heading 1s ease-out;
+}
+
+@keyframes heading {
+  from {
+    transform: translateY(-60%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@media (max-width: 576px) {
+  .myText {
+    font-size: 35px;
+  }
+}

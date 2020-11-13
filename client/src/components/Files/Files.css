@@ -1,0 +1,67 @@
+.myFiles {
+  background-color: #fff;
+  height: 300px;
+  margin-top: 200px;
+  border-top: 1px solid #e80368;
+  border-bottom: 1px solid #e80368;
+  animation: onOpenForm 1s;
+}
+@keyframes onOpenForm {
+  from {
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+.imageFile {
+  border-radius: 100px;
+}
+
+.arrowBtn {
+  position: relative;
+}
+.arrowBtn:hover {
+  background-color: lightgray;
+  opacity: 0.8;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.arrowBtn span {
+  position: absolute;
+  display: flex;
+  bottom: 15px;
+  left: 12px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+input {
+  display: none;
+}
+
+.camera {
+  font-size: 200px;
+  color: #e80368;
+  cursor: pointer;
+}
+.rightArrow {
+  display: block;
+  font-size: 100px;
+  color: #e80368;
+}
+.leftArrow {
+  position: fixed;
+  font-size: 80px;
+  top: 50px;
+  left: 10px;
+  color: #e80368;
+}
+.leftArrow:hover {
+  background-color: rgb(24, 24, 24);
+  opacity: 0.8;
+  cursor: pointer;
+  border-radius: 50px;
+}

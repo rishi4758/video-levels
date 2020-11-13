@@ -1,0 +1,35 @@
+/* 
+#####table content#####
+1. card
+2.cardImg
+*/
+.card {
+  height: auto;
+  width: 360px;
+  box-shadow: 0 0 20px #000000;
+  transition: all 0.5s;
+  animation: myCard 0.5s ease-in-out;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+.card:hover {
+  box-shadow: 5px 5px 30px 1px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 1px rgba(0, 0, 0, 0.22);
+  transform: scale(0.9, 0.9);
+}
+@keyframes myCard {
+  from {
+    opacity: 0;
+    transform: rotateY(100deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+
+.cardImg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
