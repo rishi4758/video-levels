@@ -3,7 +3,7 @@
 # in server directory  
 cd server  
 npm install  
-nodemon index  
+node index  
 
 #in client directory  
 cd client  
